@@ -7,6 +7,10 @@
     <title>Hello Angular</title>
   </head>
   <body>
-    Hello Angular
+    <h1>Angular app</h1>
+    <div ng-controller="MyFirstController">
+      <input type="text" ng-model="name">
+      Inside my input is:{{name}}
+    </div>
   </body>
 </html>

@@ -1,8 +1,13 @@
 (function functionName() {
   'use strict';
-  x="hello";
+  var x="hello";
   angular.module('myApp',[])
-.controller('MyFirstController',function(){
+.controller('MyFirstController',function($scope){
+  $scope.name = "Koushik";
+
+  $scope.sayHello = function(){
+    return "Hello Users";
+  }
 
 });
 
